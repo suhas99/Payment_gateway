@@ -89,7 +89,8 @@ def success(request):
 		print("Your Transaction ID for this transaction is ", txnid)
 		print("We have received a payment of Rs. ", amount, ". Your order will soon be shipped.")
 	context = {"txnid": txnid, "status": status, "amount": amount}
-	return render_to_response('sucess.html', RequestContext(request,context))
+# 	return render_to_response('sucess.html', RequestContext(request,context))
+	return render_to_response('sucess.html', context)
 
 
 @csrf_protect
