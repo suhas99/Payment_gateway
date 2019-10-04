@@ -11,9 +11,9 @@ from django.template.context_processors import csrf
 
 
 def Home(request):
-	MERCHANT_KEY = "EPLXxZ4h"
-	key = "EPLXxZ4h"
-	SALT = "q2plxvdank"
+	MERCHANT_KEY = ""
+	key = ""
+	SALT = ""
 	PAYU_BASE_URL = "https://sandboxsecure.payu.in/_payment"
 	action = ''
 	posted = {'amount': '10',
