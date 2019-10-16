@@ -16,18 +16,19 @@ def Home(request):
 	SALT = ""
 	PAYU_BASE_URL = "https://sandboxsecure.payu.in/_payment"
 	action = ''
-	posted = {'amount': '10',
-			  'firstname': 'renjith',
-			  'email': 'sraj@gmail.com',
-			  'phone': '9746272610', 'productinfo': 'test',
-			  'surl': 'http://127.0.0.1:8000/Success/',
-			  'furl': 'http://127.0.0.1:8000/Failure/',
-			  'lastname': 'test', 'address1': 'test',
-			  'address2': 'test', 'city': 'test',
-			  'state': 'test', 'country': 'test',
-			  'zipcode': 'tes', 'udf1': '',
-			  'udf2': '', 'udf3': '', 'udf4': '', 'udf5': ''
-			  }
+	posted=paymment_data(10,'suhas','suhaskashyap2@gmail.com',8105706758,'choclate')
+	# posted = {'amount': '10',
+	# 		  'firstname': 'renjith',
+	# 		  'email': 'sraj@gmail.com',
+	# 		  'phone': '9746272610', 'productinfo': 'test',
+	# 		  'surl': 'http://127.0.0.1:8000/Success/',
+	# 		  'furl': 'http://127.0.0.1:8000/Failure/',
+	# 		  'lastname': 'test', 'address1': 'test',
+	# 		  'address2': 'test', 'city': 'test',
+	# 		  'state': 'test', 'country': 'test',
+	# 		  'zipcode': 'tes', 'udf1': '',
+	# 		  'udf2': '', 'udf3': '', 'udf4': '', 'udf5': ''
+	# 		  }
 	# Merchant Key and Salt provided y the PayU.
 	for i in request.POST:
 		posted[i] = request.POST[i]
