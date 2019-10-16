@@ -10,6 +10,17 @@ from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from django.template.context_processors import csrf
 
 
+def paymment_data(amountV,firstnameV,emailV,phoneV,productinfoV):
+	d={}
+	d['amount']=amountV
+	d['firstname']=firstnameV
+	d['email']=emailV
+	d['phone']=phoneV
+	d['productinfo']=productinfoV
+	d['surl']='http://127.0.0.1:8000/Success/'
+	d['furl']='http://127.0.0.1:8000/Failure/'
+	return d
+
 def Home(request):
 	MERCHANT_KEY = ""
 	key = ""
