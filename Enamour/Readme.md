@@ -22,11 +22,5 @@ https://secure.payu.in/_payment
 Happy Coding!
 
 
-❮img src="Enamour/Template_payment/1.png" ❯
-❮img src="Enamour/Template_payment/2.png" ❯
 
 
-
-
-![](Enamour/Template_payment/1.png)
-![](Enamour/Template_payment/1.png)
